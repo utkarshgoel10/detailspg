@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>All Products - SmartQart</title>
+</head>
+<body>
+	
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<!-- <img src="logo.png" width="125px"> -->
+			<img src="www1.jpeg" width="125px" style="opacity: 90%;">
+		</div>
+	
+	<nav>
+		<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+		<ul id="menuitems">
+			<li><a href="indexx.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Account</a></li>
+		</ul>
+	</nav>	
+
+	</div>
+
+	
+
+
+</div>
+
+
+<!---------------Single Product Details----------------->
+
+<div class="small-container single-product">
+	<div class="row">
+		<div class="col-2">
+			<img src="gallery-1.jpg" width="100%" id="ProductImg">
+
+			<div class="small-img-row">
+				<div class="small-img-col">
+					<img src="gallery-1.jpg" width="100%" class="small-img">
+				</div>
+			
+			
+				<div class="small-img-col">
+					<img src="gallery-2.jpg" width="100%" class="small-img">
+				
+			</div>
+			
+				<div class="small-img-col">
+					<img src="gallery-3.jpg" width="100%" class="small-img">
+				</div>
+			
+			
+				<div class="small-img-col">
+					<img src="gallery-4.jpg" width="100%" class="small-img">
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="col-2">
+			<p>Home / T-Shirt</p>
+			<h1>Red Printed T-Shirt by HRX</h1>
+			<h4>Rs.50.00</h4>
+			<select>
+				<option>Select Size</option>
+				<option>L</option>
+				<option>XL</option>
+				<option>S</option>
+			</select>
+			<input type="number" value="1">
+			<a href="" class="btnn">Add To Cart</a>
+			<h3>Product Details</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+	</div>
+</div>
+
+<!---------------Title----------------->
+<div class="small-container">
+	<div class="row row-2">
+		<h2>Related Products</h2>
+		<p>View More</p>
+	</div>
+
+</div>
+
+
+<!---------------Products----------------->
+
+<div class="small-container">
+
+
+
+<div class="row">
+	<div class="col-4">
+		<img src="product-1.jpg">
+		<h4>Red Printed T-Shirt</h4>
+
+		<p>Rs.50.00</p>
+	</div>
+	<div class="col-4">
+		<img src="product-2.jpg">
+		<h4>Red Printed T-Shirt</h4>
+		
+		<p>Rs.60.00</p>
+	</div>
+	<div class="col-4">
+		<img src="product-3.jpg">
+		<h4>Red Printed T-Shirt</h4>
+		
+		<p>Rs.90.00</p>
+	</div>
+	<div class="col-4">
+		<img src="product-4.jpg">
+		<h4>Red Printed T-Shirt</h4>
+		
+		<p>Rs.10.00</p>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+	var menuitems = document.getElementById('menuitems')
+	menuitems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if (menuitems.style.maxHeight == "0px") {
+			menuitems.style.maxHeight = "200px";
+		}
+		else
+		{
+			menuitems.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+
+
+<!----------productgallery-------------->
+<script>
+	var ProductImg = document.getElementById('ProductImg');
+	var smallimg = document.getElementsByClassName('small-img');
+	smallimg[0].onclick = function()
+	{
+		ProductImg.src = smallimg[0].src;
+	}
+	smallimg[1].onclick = function()
+	{
+		ProductImg.src = smallimg[1].src;
+	}
+	smallimg[2].onclick = function()
+	{
+		ProductImg.src = smallimg[2].src;
+	}
+	smallimg[3].onclick = function()
+	{
+		ProductImg.src = smallimg[3].src;
+	}
+</script>
+</body>
+</html>
